@@ -1,0 +1,34 @@
+//
+// EPR specific styling
+// --------------------------------------------------
+
+$blue-epr: #01478D;
+$green-epr: #68B930;
+$white-epr: #E5E5E5;
+
+.epr {
+  .panel-epr {
+    background: #D3D3D3;
+    border-color: $blue-epr;
+
+    .panel-heading {
+      background-color: $blue-epr;
+      border-color: $blue-epr;
+      color: $white-epr;
+    }
+  }
+
+  .btn-primary {
+    background-color: $green-epr;
+    border-color: $white-epr;
+
+    &:hover {
+      background-color: $blue-epr;
+      border-color: $green-epr;
+    }
+  }
+
+  .btn-link {
+    color: $blue-epr;
+  }
+}
