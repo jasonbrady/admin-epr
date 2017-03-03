@@ -107,6 +107,13 @@ class PleskController extends Controller
         return view('plesk.userList', ['users' => $this->users]);
     }
 
+    public function homeView()
+    {
+        $this->getAllMailAccounts()->getUsers();
+
+        return view('home', ['users' => $this->users]);
+    }
+
     /**
      * @param array $users
      * @return array

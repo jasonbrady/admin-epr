@@ -13,9 +13,10 @@
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index');
-Route::get('/home', 'HomeController@index');
-
+//Route::get('/', 'HomeController@index');
+//Route::get('/home', 'HomeController@index');
+Route::get('/', 'PleskController@homeView');
+Route::get('/home', 'PleskController@homeView');
 
 Route::group(['prefix' => '/plesk'], function() {
     Route::get('listusers', [
